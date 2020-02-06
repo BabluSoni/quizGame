@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <form name="myform">
+            <div class="que-box">
+                <h1>Choose Correct Answers To score Full Marks</h1>
+                <h2 class="que">Que. 1 What is HTML? </h2>
+                <input class="rad" type="radio" name="que1" value="a"><button class="btn" type="button">Hyper Type Makeup Longing</button>
+                <input class="rad" type="radio" name="que1" value="b"><button class="btn" type="button">Hyper Text Markup Language</button>
+                <input class="rad" type="radio" name="que1" value="c"><button class="btn" type="button">Hyper Tabular Markup Language</button>
+                <input class="rad" type="radio" name="que1" value="d"><button class="btn" type="button">None of these</button>
+
+                <h2 class="que">Que. 2 Markup tags tell the web browser? </h2>
+                <input class="rad" type="radio" name="que2" value="a"><button class="btn" type="button">How to organise the page</button>
+                <input class="rad" type="radio" name="que2" value="b"><button class="btn" type="button">How to display the page</button>
+                <input class="rad" type="radio" name="que2" value="c"><button class="btn" type="button">How to display message box on page</button>
+                <input class="rad" type="radio" name="que2" value="d"><button class="btn" type="button">None of these</button>
+
+                <h2 class="que">Que. 3 www is based on which model? </h2>
+                <input class="rad" type="radio" name="que3" value="a"><button class="btn" type="button">Local-server</button>
+                <input class="rad" type="radio" name="que3" value="b"><button class="btn" type="button">Client-server</button>
+                <input class="rad" type="radio" name="que3" value="c"><button class="btn" type="button">3-tier</button>
+                <input class="rad" type="radio" name="que3" value="d"><button class="btn" type="button">None of these</button>
+
+                <h2 class="que">Que. 4 What are Empty elements and is it valid? </h2>
+                <input class="rad" type="radio" name="que4" value="a"><button class="btn" type="button">No, there is no such terms as Empty Element</button>
+                <input class="rad" type="radio" name="que4" value="b"><button class="btn" type="button">Empty elements are element with no data</button>
+                <input class="rad" type="radio" name="que4" value="c"><button class="btn" type="button">No, it is not valid to use Empty Element</button>
+                <input class="rad" type="radio" name="que4" value="d"><button class="btn" type="button">None of these</button>
+
+                <h2 class="que">Que. 5 Which of the following attributes of text box control allow to limit the maximum character? </h2>
+                <input class="rad" type="radio" name="que5" value="a"><button class="btn" type="button">size</button>
+                <input class="rad" type="radio" name="que5" value="b"><button class="btn" type="button">len</button>
+                <input class="rad" type="radio" name="que5" value="c"><button class="btn" type="button">maxlength</button>
+                <input class="rad" type="radio" name="que5" value="d"><button class="btn" type="button">all of these</button>
+
+                <h2 class="que">Que. 6 HTML is a subset of </h2>
+                <input class="rad" type="radio" name="que6" value="a"><button class="btn" type="button">SGMT</button>
+                <input class="rad" type="radio" name="que6" value="b"><button class="btn" type="button">SGML</button>
+                <input class="rad" type="radio" name="que6" value="c"><button class="btn" type="button">SGMD</button>
+                <input class="rad" type="radio" name="que6" value="d"><button class="btn" type="button">None of these</button>
+
+                <h2 class="que">Que. 7 The attribute, which define the relationship between current document and HREF'ed URL is </h2>
+                <input class="rad" type="radio" name="que7" value="a"><button class="btn" type="button">REL</button>
+                <input class="rad" type="radio" name="que7" value="b"><button class="btn" type="button">URL</button>
+                <input class="rad" type="radio" name="que7" value="c"><button class="btn" type="button">REV</button>
+                <input class="rad" type="radio" name="que7" value="d"> <button class="btn" type="button">all of these</button>
+
+                <input class="btn-submit" type="submit" value="submit" onclick="check()">
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        function check() {
+            var que1 = document.myform.que1.value;
+            var que2 = document.myform.que2.value;
+            var que3 = document.myform.que3.value;
+            var que4 = document.myform.que4.value;
+            var que5 = document.myform.que5.value;
+            var que6 = document.myform.que6.value;
+            var que7 = document.myform.que7.value;
+            var count = 0;
+
+            if (que1 == "b") {
+                count++;
+            }
+
+            if (que2 == "b") {
+                count++;
+            }
+
+            if (que3 == "b") {
+                count++;
+            }
+
+            if (que4 == "c") {
+                count++;
+            }
+
+            if (que5 == "c") {
+                count++;
+            }
+
+            if (que6 == "d") {
+                count++;
+            }
+
+            if (que7 == "a") {
+                count++;
+            }
+            alert("You got" + count + "Marks");
+
+        }
+    </script>
+
+</body>
+
+</html>
